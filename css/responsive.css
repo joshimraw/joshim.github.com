@@ -1,0 +1,31 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1280px) { 
+
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+.main-menu {
+  float: none;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.navbar-brand > img {
+  max-width: 150px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #0171BB;
+  color: #FFF;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #0171BB;
+}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
