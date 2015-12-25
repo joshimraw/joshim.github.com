@@ -1,24 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Case</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AamarBank | Compare and Apply for Loans and Credit Cards</title>
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
 
-<div class="container">
-  <h3>Pills</h3>
-  <ul class="nav nav-pills">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Menu 1</a></li>
-    <li><a href="#">Menu 2</a></li>
-    <li><a href="#">Menu 3</a></li>
-  </ul>
-</div>
+    <!-- Bootstrap css form cdn -->
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <!-- Font awesome css -->
+	<!--    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    
+    <!-- Main CSS file. Caution don't make edition if it is extremely necessary -->
+    <link rel="stylesheet" href="style.css">    
+	
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
 
-</body>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    
+    <body>
+		<header id="top-navigation">
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Start Logo / Text -->
+						<a class="navbar-brand text-logo" href="#"><img src="img/logo.png" alt="" /></a>
+						<!-- End Logo / Text -->
+					</div>
+					<!-- Start Navigation -->
+					<div class="navigation navbar-collapse collapse">
+						<ul class="nav navbar-nav menu-right main-menu">
+							<li><a href="#"><i class="fa fa-home"></i></a></li>
+							<li><a href="#">Loans</a></li>
+							<li><a href="#">Credit Cards</a></li>
+							<li><a href="#">Fixed Deposits</a></li>
+							<li><a href="#">Finance Tools</a></li>
+							<li><a href="#">Resources</a></li>
+							<li><a href="#">Sign In</a></li>
+						</ul>
+					</div>
+					<!-- End Navigation  -->
+				</div>
+			</nav>
+		</header>
+		
+		<!--Banner start-->
+		<section id="banner" class="banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="main-search">
+									  <div class="btn-group" role="group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										  I would like to
+										  <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+										  <li><a href="#">Dropdown link</a></li>
+										  <li><a href="#">Dropdown link</a></li>
+										  <li><a href="#">Dropdown link</a></li>
+										  <li><a href="#">Dropdown link</a></li>
+										  <li><a href="#">Dropdown link</a></li>
+										</ul>
+									  </div>
+									  <div class="btn-group" role="group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										  Select Product
+										  <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+										  <li><a href="#">Dropdown link</a></li>
+										  <li><a href="#">Dropdown link</a></li>
+										  <li><a href="#">Dropdown link</a></li>
+										  <li><a href="#">Dropdown link</a></li>
+										  <li><a href="#">Dropdown link</a></li>
+										</ul>
+									  </div>
+									  <button type="button" class="btn btn-default search-submit"><i class="fa fa-search"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="row main-features">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="main-features-single">
+									<span><img src="img/home.png" alt=""/></span>
+									<p>Home Loan</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="main-features-single">
+									<span><img src="img/car.png" alt=""/></span>
+									<p>Car Loan</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="main-features-single">
+									<span><img src="img/card.png" alt=""/></span>
+									<p>Credit Card</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="main-features-single">
+									<span><img src="img/deposit.png" alt=""/></span>
+									<p>Fixed Deposit</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row"><!--Banner arrow start-->	
+					<div class="col-md-12">
+						<div class="banner-arrow">
+							<a href="#"><img src="img/banner-arrow.png"/></a>
+						</div>
+					</div>
+				</div><!--Banner arrow end-->	
+				
+			</div>
+		</section>
+		<!--Banner end-->		
+		
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="footer-copyright pull-right">
+							<p>Copyright &copy; 2015 aamarbank.com - All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+    
+    <!-- jQuery form CDN -->
+    <!--<script src="https://code.jquery.com/jquery.min.js"></script> -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    
+    <!-- Bootstrap form CDN -->
+   <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.js"></script>
+   
+    <!-- jQuery easing -->
+    <script src="js/jquery.easing.1.3.min.js"></script>   
+		
+		
+		<!--Oh Yes, IE 9+ Supports animation, lets activate for IE 9+-->
+		<!--[if gte IE 9]>
+			<script type="text/javascript">new WOW().init();</script>
+		<![endif]-->		 
+		
+		<!--Opacity & Other IE fix for older browser-->
+		<!--[if lte IE 8]>
+			<script type="text/javascript" src="js/ie-opacity-polyfill.js"></script>
+		<![endif]-->	    
+    
+    <!-- jQuery main script -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
