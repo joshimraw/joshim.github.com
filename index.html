@@ -1,96 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>The Net Kits</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<title>The Net Kits</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
- 
-</head>
-<body style="padding:20px">
 
-<div class="row">
-  <div class="medium-4 columns">
-    <a href="/"><img src="img/logo.jpg" /></a>
-  </div>
-  <div class="medium-8 columns">
-<ul class="tabs" data-tab>
-  <li class="tab-title active"><a href="#">Home</a></li>
-  <li class="tab-title"><a href="#">Portfolios</a></li>
-  <li class="tab-title"><a href="#">Blog</a></li>
-  <li class="tab-title"><a href="#">About Me</a></li>
-</ul>
-  </div>
+<header>
+	<div class="wrapper" id="myheading">
+		<a href="" class="logo"><img src="img/logo.jpg" alt="" title=""></a>
+		<nav>
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">Protfolio</a></li>
+				<li><a href="#">Practice</a></li>
+				<li><a href="#">Contact </a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<section>
+	<div id="container" onmouseover="stopSlid()" onmouseout="resumeSlide()">
+	<img src="img/pic.jpg" id="imgSlider">
+	<div><h2 id="imgDescription" ></h2></div>
+	<a id="prev" href="#" onclick="prevImg()">Previous</a>
+	<a id="next" href="#" onclick="newImg()">Next</a>
 </div>
-      <!-- header end -->
+</section>
 
-      <!-- Slider start -->
-<div class="container">
-<div class="carousel slide" id="myCarousel" data-ride="carousel">
+<section>
+	<div id="service-wrapper">
+		<div class="service-item">
+			<img src="img/s1_icon.png" alt="" title="">
+			<h2>DUIS AUTE IRURE</h2>
+			<p>Excepteur sint occaecat cupi datat non it proident, sunt in culpa qui officia dese runtorn mollit anim id est laborum.</p>
+		</div>
+		<div class="service-item">
+			<img src="img/s2_icon.png" alt="" title="">
+			<h2>DUIS AUTE IRURE</h2>
+			<p>Excepteur sint occaecat cupi datat non it proident, sunt in culpa qui officia dese runtorn mollit anim id est laborum.</p>
+		</div>
+		<div class="service-item">
+			<img src="img/s3_icon.png" alt="" title="">
+			<h2>DUIS AUTE IRURE</h2>
+			<p>Excepteur sint occaecat cupi datat non it proident, sunt in culpa qui officia dese runtorn mollit anim id est laborum.</p>
+		</div>
+	</div>
+</section>
 
-  <!-- Indecators -->
-  <ol class="carousel-indicators">
-<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-<li data-target="#myCarousel" data-slide-to="1"></li>
-<li data-target="#myCarousel" data-slide-to="2"></li>
-<li data-target="#myCarousel" data-slide-to="3"></li>
-<li data-target="#myCarousel" data-slide-to="4"></li>
-  </ol>
+<article>
+	<div class="whoamI">
+		<h1>Who Am I ?</h1>
+		<hr><br><br>
+		<p>I have created a personal website for me. Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+</article>
 
-  <!-- Wrapper for Slider -->
-  <div class="carousel-inner" role="listbox">
-<div class="item active">
-<img src="img/pic1.jpg" width="">
-</div>
-<div class="item">
-<img src="img/pic2.jpg" width="">
-</div>
-<div class="item">
-<img src="img/pic3.jpg" width="">
-</div>
-<div class="item">
-<img src="img/pic4.jpg" width="">
-</div>
-<div class="item">
-<img src="img/pic5.jpg" width="">
-</div>
-  </div>
+	<section>
+	<div class="recent-work">
+		<h1>Recent Work</h1>
+		<p id="hline"></p>
+		<br><br>
+		<div class="work-item">
+			<a  href=""><img src="img/work.png"></a>
+			<div class="project-title">
+				<a href="">Project Brand<span>&#8594;</span></a>
+			</div>
+		</div>
+			<div class="work-item">
+			<a  href=""><img src="img/work.png"></a>
+			<div class="project-title">
+				<a href="">Project Brand<span>&#8594;</span></a>
+			</div>
+		</div>
+			<div class="work-item">
+			<a  href=""><img src="img/work.png"></a>
+			<div class="project-title">
+				<a href="">Project Brand<span>&#8594;</span></a>
+			</div>
+		</div>
+		<div class="work-item">
+			<a  href=""><img src="img/work.png"></a>
+			<div class="project-title">
+				<a href="">Project Brand<span>&#8594;</span></a>
+			</div>
+		</div>
+	</div>
 
-<!-- Left and Rihgt Control -->
-<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-<span class="sr-only">Previous</span>
-</a>
+</section>
+<footer>
+	<div class="footer-wrapper">
+	<div class="goUp" onclick="return false;" onmousedown="myScroller('myheading');">
+		<a href="#" title="TO TOP"><img src="img/goup.png"></a>
+	</div>
+	<div class="profile">
+		<img class="me" src="img/joshim.jpg" alt="Jashim Picture" title="My Photo">
+	</div>
+	<div class="briefinfo">
+		<div class="social-link">
+			<ul>
+			<li class="fb"><a href=""><img src="img/fb.png"></a></li>
+			<li class="twit"><a href=""><img src="img/twit.png"></a></li>
+			<li class="gplus"><a href=""><img src="img/gplus.png"></a></li>
+			<li class="utube"><a href=""><img src="img/utube.png"></a></li>
+		</ul>
+		</div>
+		<div class="site-link">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Protfolio</a></li>
+			<li><a href="">Practice</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+		</div>
+		<div>
+			<img class="foImg" src="img/type_7.png">
+		</div>
+	</div>
+	<div class="address">
+		<h2><u>Location</u></h2>
+		<p><strong> Jashimuddin Ave <br>Dhaka 1230 <br>Bangladesh</strong></p>
+		<p>Email: joshim7m@gmail.com<br>Phone: +8001875496520</p>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14595.339203879925!2d90.38669680515183!3d23.859999253961732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c41e40a2551f%3A0x27b134c2d10d381c!2sJashimuddin+Rd%2C+Dhaka+1230%2C+Bangladesh!5e0!3m2!1sen!2s!4v1458372699667"></iframe>
+		</div>
+	</div>
+	</div>
+</footer>
+	<div class="copyright">
+		<p>Copyright&copy; Thenetkits 2016 | Jashim uddin</p>
+	</div>
 
-<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-<span class="sr-only">Next</span>
-</a>
-</div>
-</div>
 
-
-
-
-
-
-<!-- Initialize Foundation JS -->
-<script>
-$(document).ready(function() {
-    $(document).foundation();
-})
-</script>
-
-
+<script type="text/javascript" src="script."></script>
 </body>
 </html>
